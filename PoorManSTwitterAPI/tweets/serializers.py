@@ -1,0 +1,9 @@
+from tweets.models import Tweet
+from rest_framework.serializers import ModelSerializer
+
+
+class TweetSerializer(ModelSerializer):
+
+    class Meta:
+        model = Tweet
+        fields = ['id', 'message', 'name', 'datetime']

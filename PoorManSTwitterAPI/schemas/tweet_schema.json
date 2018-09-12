@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/PoorManSTwitter/schema#",
+  "title": "Tweet Type",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "required": ["message", "name"],
+  "additionalProperties": false
+}
