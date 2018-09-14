@@ -15,7 +15,7 @@
 
 ## Overview
 
-This app follows the requirements outlined in [these requirements](../requirements/OSR Coding Sample Project.pdf).
+This app follows the requirements outlined in [these requirements](../requirements/OSR%20Coding%20Sample%20Project.pdf).
 
 Consists of a very simple RESTful service, which allows two operations:
 
