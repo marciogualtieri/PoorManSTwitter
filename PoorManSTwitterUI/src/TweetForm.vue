@@ -1,30 +1,38 @@
 <template>
-  <div>
-    <b-form @submit="submitTweet">
-      <b-form-group label="Name:">
-        <b-form-input id="nameInput" type="text"
-                      v-model="name"
-                      placeholder="Your Poor Man's Twitter Name">
-        </b-form-input>
-        <b-form-invalid-feedback id="nameFeedback" v-if="!($v.name.required && $v.name.maxLength)">
-           Name is required and must be at most 15 characters long.
-        </b-form-invalid-feedback>
-      </b-form-group>
+  <div class="container" inline>
+      <b-form inline @submit="submitTweet">
+        <b-form-row>
+         <b-col class="col-lg-3">
+          <label for="nameInput">Name:</label>
+          <b-form-input id="nameInput" type="text"
+                        v-model="name"
+                        placeholder="Your Poor Man's Twitter Name">
+          </b-form-input>
+          <b-form-invalid-feedback id="nameFeedback" v-if="!($v.name.required && $v.name.maxLength)">
+             Name is required and must be at most 15 characters long.
+          </b-form-invalid-feedback>
 
-      <b-form-group label="Message:">
-        <b-form-input id="messageInput"
-                      type="text"
-                      v-model="message"
-                      placeholder="Your Poor Man's Twitter Message">
-        </b-form-input>
-        <b-form-invalid-feedback id="messageFeedback" v-if="!($v.message.required && $v.message.maxLength)">
-           Message is required and must be at most 50 characters long.
-        </b-form-invalid-feedback>
-      </b-form-group>
-      <b-button type="submit" :disabled="$v.$invalid">Tweet</b-button>
-    </b-form>
+          </b-col>
+          <b-col class="col-lg-9">
+            <label for="messageInput">Message:</label>
+            <b-form-input id="messageInput"
+                          type="text"
+                          v-model="message"
+                          placeholder="Your Poor Man's Twitter Message">
+            </b-form-input>
+            <b-form-invalid-feedback id="messageFeedback" v-if="!($v.message.required && $v.message.maxLength)">
+               Message is required and must be at most 50 characters long.
+            </b-form-invalid-feedback>
+          </b-col>
+       </b-form-row>
+       <b-form-row>
+         <b-col class="col-lg-12">
+          <b-button size="lg" type="submit" :disabled="$v.$invalid">Tweet</b-button>
+         </b-col>
+      </b-form-row>
 
-    <p id="status" v-if="status">{{status}}</p>
+      </b-form>
+      <p id="status" v-if="status">{{status}}</p>
   </div>
 </template>
 
@@ -71,3 +79,17 @@ export default {
 };
 
 </script>
+
+<style>
+button {
+  margin-top: 15px!important;
+}
+
+input {
+  width: 100%!important;
+}
+
+.container {
+   padding: 0px;
+}
+</style>

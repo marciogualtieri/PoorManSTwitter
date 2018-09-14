@@ -25,6 +25,12 @@ Consists of a very simple single-page application, which is comprised of the fol
 
 This app is the front-end service for the [Poor Man's Twitter API](../PoorManSTwitterAPI), which has been implemented in Python using [Django](https://www.djangoproject.com/).
 
+***Note:***
+
+The app uses responsive design, so the form inputs show side-by-side if the screen is large:
+
+<kbd>![Poor Man's Twitter UI](./images/poor_man_s_twitter_ui_responsive.gif)</kbd>
+
 ## Running Tests
 
 To run [Jasmine tests](https://jasmine.github.io/):
