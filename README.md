@@ -1,11 +1,11 @@
 # Poor Man's Twitter
 
-The purpose of this project is to showcase some of my full-stack development skills in Python and Javascript.
+The purpose of this project is to showcase some of my full-stack development skills in Python (the Django Framework specificaly) and Javascript (Vue.JS).
 
-The solution is comprised of the two individual projects:
+The solution is comprised of two individual projects:
 
-- [Poor Man's Twitter API](./PoorManSTwitterAPI), a back-end developed with the Django Framework.
+- [Poor Man's Twitter API](./PoorManSTwitterAPI), the back-end service (a RESTful API).
 
-- [Poor Man's Twitter UI](./PoorManSTwitterUI), a front-end developed with Vue.JS.
+- [Poor Man's Twitter UI](./PoorManSTwitterUI), the front-end service (a single-page web app).
 
-Each project has its own readme file. For more details, please visit their correspondent readme files.
+Each project has its own readme file, so please refer to them for futher details.
