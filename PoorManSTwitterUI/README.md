@@ -16,7 +16,7 @@
 
 ## Overview
 
-This app follows the requirements outlined in [these requirements](../requirements/_HR_-_Hiring__Python_Developer_Assessment.pdf).
+This app follows the requirements outlined in [these requirements](../requirements/OSR Coding Sample Project.pdf).
 
 Consists of a very simple single-page application, which is comprised of the following components:
 
