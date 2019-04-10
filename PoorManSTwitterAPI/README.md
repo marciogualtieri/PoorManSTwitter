@@ -28,9 +28,9 @@ This app is the back-end service for the [Poor Man's Twitter UI](../PoorManSTwit
 
 This app has been developed using Python 3.6.3 and Django 2.1.1.
 
-On Ubuntu Linux, you may execute the following command on a terminal to install this particular Django version:
+On Ubuntu Linux, you may execute the following command on a terminal to install all dependencies:
 
-    sudo pip3 install "Django~=2.1.1"
+    sudo pip3 install -r requirements.txt
 
 ## Running Tests
 
